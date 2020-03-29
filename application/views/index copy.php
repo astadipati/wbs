@@ -26,13 +26,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top" id="mainNav">
     <div class="container">
-    <style>
-img {
-  width: 7%;
-  height: auto;
-}
-</style>
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="<?=site_url()?>assets/img/26846.png" alt=""> Pengadilan Agama Tuban</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">WBS Pengadilan Agama Tuban</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -53,7 +47,7 @@ img {
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal-login">Login</a>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal-register">Register</a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal-Register">Register</a>
               </div>
           </li>
         </ul>
@@ -72,8 +66,8 @@ img {
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Tentang WBS</h2>
-          <p class="lead">"Whistleblowing System adalah aplikasi yang disediakan oleh Badan Pengawasan Pengadilan Agama Tuban, untuk melaporkan suatu perbuatan berindikasi pelanggaran yang terjadi di lingkungan Mahkamah Agung Republik Indonesia atau Peradilan dibawahnya." Badan Pengawasan Mahkamah Agung RI menghargai informasi yang Anda laporkan karena Fokus kami adalah materi informasi yang Anda Laporkan. "Penanganan Whistleblowing tidak melayani pengaduan yang berkaitan dengan masalah perkara." </p>
+          <h2>About this page</h2>
+          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
           <ul>
             <li>Clickable nav links that smooth scroll to page sections</li>
             <li>Responsive behavior when clicking nav links perfect for a one page website</li>
@@ -119,51 +113,6 @@ img {
 
   
 <!-- MODAL -->
-<div class="modal fade" id="modal-register" tabindex="-1" role="dialog" 
-aria-labelledby="modal-login-label" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      
-    <div class="modal-header bg-info">
-        <h4 class="modal-title"> Silahkan Isi Form Register </h4>
-    </div>
-      
-      <div class="modal-body">
-        
-              <form role="form" action="<?=site_url('user/register')?>" method="post" class="login-form">
-              <div class="form-group">
-                    <label for="id">Nama Lengkap </label>
-                    <input type="text"name="fullname" class="form-control" placeholder="isi nama lengkap" id="nomor_perkara" required>
-                </div>
-                <div class="form-group">
-                    <label for="id">Alamat </label>
-                    <input type="text" name="alamat" class="form-control" placeholder="alamat lengkap" id="jenis_perkara" required>
-                </div>
-                <div class="form-group">
-                    <label for="id">No KTP </label>
-                    <input type="text" name="ktp"class="form-control" placeholder="nomor KTP" id="proses_akhir" required>
-                </div>
-                <div class="form-group">
-                    <label for="id">Username </label>
-                    <input type="text" name="username" class="form-control" placeholder="username" id="proses_akhir" pattern=".{6,10}" required title="min 6 to max 10 characters" required>
-                </div>
-                <div class="form-group">
-                    <label for="id">Password </label>
-                    <input type="password" name="password" class="form-control" placeholder="password" pattern=".{8,}" required title="min 8 characters" id="proses_akhir" required>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" name="register" class="btn btn-primary" >Register</button>
-                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </form>
-              
-      </div>
-      
-    </div>
-  </div>
-</div>
-  <!-- end modal register -->
-<!-- MODAL -->
 <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" 
 aria-labelledby="modal-login-label" aria-hidden="true">
   <div class="modal-dialog">
@@ -177,17 +126,16 @@ aria-labelledby="modal-login-label" aria-hidden="true">
         
               <form role="form" action="<?=site_url('login/proses')?>" method="post" class="login-form">
                 <div class="form-group">
-                  <label for="form-username"> Username</label>
-                  </i><input type="text" name="username" placeholder="Username" class="form-username form-control" id="username" required>
-                  <span class="glyphicon glyphicon-envelope"></span>
+                  <label for="form-username">Username</label>
+                    <input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="username" required>
                 </div>
                 <div class="form-group">
                     <label for="form-password">Password</label>
-                    <input type="password" name="password" placeholder="Password" class="form-password form-control" id="password" required>
+                    <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="password" required>
                 </div>
                 <!-- <button type="submit" class="btn btn-default ">Sign in!</button> -->
                 <div class="modal-footer">
-                    <button type="submit" name="login" class="btn btn-primary" >Login</button>
+                    <button type="submit" class="btn btn-primary" >Login</button>
                     <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
                 </div>
               </form>
@@ -199,7 +147,41 @@ aria-labelledby="modal-login-label" aria-hidden="true">
 </div>
   <!-- end modal login -->
 
-  
+  <!-- coba modal -->
+  <div class="modal fade" id="modal-register" tabindex="-1" role="dialog" 
+aria-labelledby="modal-login-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header bg-warning">
+            <h4 class="modal-title"> Silahkan Register </h4>
+        </div>
+                <div class="modal-body">
+                <!-- <input type="hidden" > -->
+                <div class="form-group">
+                    <label for="id">Nama Lengkap </label>
+                    <input type="text" class="form-control" id="nomor_perkara" required>
+                </div>
+                <div class="form-group">
+                    <label for="id">Alamat </label>
+                    <input type="text" class="form-control" id="jenis_perkara" required>
+                </div>
+                <div class="form-group">
+                    <label for="id">No KTP </label>
+                    <input type="text" class="form-control" id="proses_akhir" required>
+                </div>
+                <div class="form-group">
+                    <label for="id">Username </label>
+                    <input type="text" class="form-control" id="proses_akhir" required>
+                </div>
+                <div class="form-group">
+                    <label for="id">Password </label>
+                    <input type="text" class="form-control" id="proses_akhir" required>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- coba modal -->
 
 
   <!-- Bootstrap core JavaScript -->
